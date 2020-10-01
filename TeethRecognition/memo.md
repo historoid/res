@@ -45,10 +45,10 @@ Amazon Linux系
 | :-: | :-: | :-: |
 | Amazon Linux2 | t2.micro | CLIでダメ。tarもダメ。 |
 | Amazon Linux | t2.micro | x CLI, tar |
-| Ubuntu20 | t2.micro | x |
-| Ubuntu18 | t2.micro | x |
-| Ubuntu20 DL | t2.micro | x |
-| Ubuntu18 DL | t2.micro | x |
+| Ubuntu Server 20.04 | t2.micro | x |
+| Ubuntu Server 18.04 | t2.micro | x |
+| Ubuntu DL 20.04 | t2.micro | x |
+| Ubuntu DL 18.04 | t2.micro | x |
 |  |  |  |
 |  |  |  |
 |  |  |  |
