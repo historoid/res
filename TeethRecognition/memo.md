@@ -9,6 +9,51 @@ Ubuntu 18系だと、Blender 2.8系がインストールされる。
 
 インストール手順が面倒なので、Amazon Linuxの方が楽なので、そっちを使うことにする。
 
+### インスタンスタイプとBlenderインストールの検証
+
+Ubuntu  
+
+`sudo apt-get update`  
+`sudo apt-get install blender`  
+もしくは
+`sudo apt update`
+`sudo apt -yV upgrade`
+`sudo apt -yV install blender blender-data`  
+
+Docker では2つ目のコマンドでインストールできた。
+
+`sudo apt update`  
+`sudo apt install snapd`
+`sudo snap install blender --classic`  
+これでどうでしょう？  
+これもダメっぽい。
+
+Fedora系  
+
+`dnf install blender`
+
+Amazon Linux系
+`sudo yum -y install freetype freetype-devel libpng-devel`
+`sudo yum -y install mesa-libGLU-devel`
+`sudo yum -y install libX11-devel mesa-libGL-devel perl-Time-HiRes`
+`tar -jxvf blender*.tar.bz2 #Use the *`
+`sudo yum -y update`
+`sudo yum -y install libXi`
+`sudo yum -y install libXrender`
+
+| AMI | インスタンスタイプ | Blenderインストールの可否 |
+| :-: | :-: | :-: |
+| Amazon Linux2 | t2.micro | CLIでダメ。tarもダメ。 |
+| Amazon Linux | t2.micro | x CLI, tar |
+| Ubuntu20 | t2.micro | x |
+| Ubuntu18 | t2.micro | x |
+| Ubuntu20 DL | t2.micro | x |
+| Ubuntu18 DL | t2.micro | x |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+
 ### スクリプトの実行
 
 `blender -b <blender-file-path> -P <python-file-path> &`
