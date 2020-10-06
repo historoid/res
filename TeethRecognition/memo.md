@@ -32,7 +32,7 @@ Fedora系
 
 `dnf install blender`  
 
-Amazon Linux系
+Amazon Linux系  
 `sudo yum -y install freetype freetype-devel libpng-devel`  
 `sudo yum -y install mesa-libGLU-devel`  
 `sudo yum -y install libX11-devel mesa-libGL-devel perl-Time-HiRes`  
