@@ -96,11 +96,11 @@ Ubuntu:latestを使用している。
 
 ### DockerのUbuntuにBlenderをインストールする
 
-`sudo apt-get update`
-`sudo apt-get -y upgrade`
-`sudo apt update`
-`sudo apt -yV upgrade`
-`sudo apt -yV install blender blender-data`
+`sudo apt-get update`  
+`sudo apt-get -y upgrade`  
+`sudo apt update`  
+`sudo apt -yV upgrade`  
+`sudo apt -yV install blender blender-data`  
 
 これでBlenderがインストールされるはず。
 
