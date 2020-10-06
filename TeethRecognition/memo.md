@@ -7,11 +7,12 @@
 Ubuntuのバージョンによって、インストールされるBlenderのバージョンが変わる。  
 Ubuntu 18系だと、Blender 2.8系がインストールされる。  
 
-インストール手順が面倒なので、Amazon Linuxの方が楽なので、そっちを使うことにする。
-
 ### インスタンスタイプとBlenderインストールの検証
 
-Ubuntu  
+以下のコマンドはただのメモ。  
+実際にはDockerをインストールしてからUbuntuのインストール方法でOK.
+
+#### Ubuntu  
 
 `sudo apt-get update`  
 `sudo apt-get install blender`  
@@ -28,11 +29,11 @@ Docker では2つ目のコマンドでインストールできた。
 これでどうでしょう？  
 これもダメっぽい。
 
-Fedora系  
+#### Fedora系  
 
 `dnf install blender`  
 
-Amazon Linux系  
+#### Amazon Linux系  
 `sudo yum -y install freetype freetype-devel libpng-devel`  
 `sudo yum -y install mesa-libGLU-devel`  
 `sudo yum -y install libX11-devel mesa-libGL-devel perl-Time-HiRes`  
@@ -49,10 +50,10 @@ Amazon Linux系
 | Ubuntu Server 18.04 | t2.micro | x |
 | Ubuntu DL 20.04 | t2.micro | x |
 | Ubuntu DL 18.04 | t2.micro | x |
-|  |  |  |
-|  |  |  |
-|  |  |  |
 
+どれもダメだった。  
+昔どうやってインストールできたのかも分からない。  
+今はDockerで代用する。
 
 ### スクリプトの実行
 
