@@ -30,16 +30,16 @@ Docker では2つ目のコマンドでインストールできた。
 
 Fedora系  
 
-`dnf install blender`
+`dnf install blender`  
 
 Amazon Linux系
-`sudo yum -y install freetype freetype-devel libpng-devel`
-`sudo yum -y install mesa-libGLU-devel`
-`sudo yum -y install libX11-devel mesa-libGL-devel perl-Time-HiRes`
-`tar -jxvf blender*.tar.bz2 #Use the *`
-`sudo yum -y update`
-`sudo yum -y install libXi`
-`sudo yum -y install libXrender`
+`sudo yum -y install freetype freetype-devel libpng-devel`  
+`sudo yum -y install mesa-libGLU-devel`  
+`sudo yum -y install libX11-devel mesa-libGL-devel perl-Time-HiRes`  
+`tar -jxvf blender*.tar.bz2 #Use the *`  
+`sudo yum -y update`  
+`sudo yum -y install libXi`  
+`sudo yum -y install libXrender`  
 
 | AMI | インスタンスタイプ | Blenderインストールの可否 |
 | :-: | :-: | :-: |
