@@ -1,5 +1,77 @@
 # 機械学習による残存歯の自動認識
 
+## AWSにあるBlenderで画像生成する方法
+
+1. AWSにDockerをインストールする
+1. このリポジトリにあるDockerfileでイメージをビルドし、コンテナを作成する
+1. ホスト（AWSのインスタンス）にS3からBlender関連ファイルをダウンロードする
+1. ホストとコンテナの共有フォルダに先ほどのBlender関連ファイルを格納する
+1. コンテナ内に入ってBlenderスクリプトを実行する
+
+### AWSにDockerをインストールする方法
+
+DockerがインストールしやすいAmazon Linux2のインスタンスを作成する。  
+GPUではなく、CPUメインで画像生成するので、c5.2xlargeを使う（別のインスタンスでもOK）。
+
+インスタンス作成後、SSHでインスタンスに入る。  
+インスタンスに入ったら以下のコマンドを実行。  
+ちなみにAmazon LinuxはCentOS系である。
+
+`sudo yum update -y`  
+`sudo yum install docker`  
+`sudo service docker start`  
+`sudo usermod -a -G docker ec2-user`
+
+一旦ここでログアウトして、再度ログインする。
+再ログイン後、以下のコマンドで動作確認
+
+`docker info`  
+
+`sudo`じゃなくてもdockerコマンド動けばOK
+
+なお、インスタンスを再起動時にDocker daemonが動かない場合にも`sudo service docker start`を入力すると良い。
+
+### Dockerfileからイメージをビルドする
+
+短いので手打ちでOK。  
+このリポジトリにあるDockerfileの内容を参照。  
+Dockerfileの内容は以下のとおり。
+
+`FROM ubuntu:20.10`  
+`RUN apt-get -y update && apt-get install -y vim blender`  
+`RUN mkdir work`  
+`CMD ["/bin/bash"]`  
+
+上記のDockerfileを作成後、ビルドする。
+
+`docker build -t historoid/blender:latest .`
+
+`-t`でイメージ名を指定している。  
+最後のピリオドがDockerfileの場所を指定している（上記の例では現在のパスを指定）。
+成功すれば`Successfully built <image-ID>`と表示される。  
+イメージIDはコピーしておく。
+
+`docker images`でちゃんとできているか確認する。  
+問題なければコンテナを作成するが、ホストとの共有ファイルを作りたいのでその準備を行う。
+
+`mkdir work`
+
+共有フォルダ名は何でも良いが今回は`work`とした。  
+Dockerコンテナ内部のフォルダも`work`になっている。
+
+`pwd`や`ls`で現在のパスを確認する。  
+おそらく`/home/ec2-user/work`が共有したいフォルダになっているはず。
+
+コンテナの作成して起動する。  
+`docker run ----name blender -v /home/ec2-user/work:/work -it <image-ID> /bin/bash`  
+
+これでコンテナが起動し、bashの入力状態になっているはず。  
+`exit`でコンテナから出て、`docker ps -a`で確認する。  
+コンテナ名がblenderになっているものがExited状態ならOK。 
+
+再度コンテナを起動する場合には、`docker start blender`で起動して、`docker exec -it blender bash`する(`/bin/bash`でも可）。
+
+
 ## Blenderに関するメモ
 
 結論として、AWSにBlenderをインストールすることはできなかった。  
