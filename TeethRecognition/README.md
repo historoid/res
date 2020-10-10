@@ -71,6 +71,10 @@ Dockerコンテナ内部のフォルダも`work`になっている。
 
 再度コンテナを起動する場合には、`docker start blender`で起動して、`docker exec -it blender bash`する(`/bin/bash`でも可）。
 
+### 踏み台サーバー
+
+`ssh -i <xxxx-1.pem> -oProxyCommand='ssh -i <xxxx-2.pem> -W %h:%p ec2-user@<踏み台インスタンスのIP>' ec2-user@<プライベートインスタンスのIP>`
+
 
 ## Blenderに関するメモ
 
