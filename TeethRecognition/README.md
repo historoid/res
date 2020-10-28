@@ -63,7 +63,7 @@ Dockerコンテナ内部のフォルダも`work`になっている。
 おそらく`/home/ec2-user/work`が共有したいフォルダになっているはず。
 
 コンテナの作成して起動する。  
-`docker run ----name blender -v /home/ec2-user/work:/work -it <image-ID> /bin/bash`  
+`docker run ---name blender -v /home/ec2-user/work:/work -it <image-ID> /bin/bash`  
 
 これでコンテナが起動し、bashの入力状態になっているはず。  
 `exit`でコンテナから出て、`docker ps -a`で確認する。  
