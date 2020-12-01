@@ -101,6 +101,22 @@ Perform the same experiment with an A-type solution.
 
 The experiments so far are haphazard. The issue of multiplicity needs to be considered. If you repeat the experiment, there is a significant difference somewhere.
 
-I have repeatedly explained to my professor that he said, "You are not trying hard enough, you should repeat the experiment under different conditions. You should repeat the experiment with different conditions.
+I repeatedly explained to the professor and he said, "You are not trying hard enough, you should repeat the experiment under different conditions".
 
 That's right, if you repeat the experiment 10 times, the probability of finding a significant difference is 40%. If the results coincide with his opinion, the experiment is considered to be successful.
+
+I reanalyzed all of the experiments so far.
+
+I performed a multivariate analysis with variables such as age of the mice, delay time, and presence or absence of congruent teeth. The professor thought that only experiments with identical conditions should be compared and did not even check my analysis. However, my analysis shows that the cure rate of the B-type solution in Experiment 1 is too high.
+
+We have too much faith in the results of Experiment 1.
+
+### Notes on the Experiment
+
+The method of measuring the pulp healing rate may be arbitrary.
+
+I have repeated the measurement five times per sample, checked for normality, and then adopted the average value. Still, the healing rate could easily vary if someone other than me were to measure it.
+
+Certainly, the Nestin positive reactions in the B group seemed to be widespread. However, only the border between the pulp and dentin was measured. If we look at the entire pulp tissue rather than the border, the positive reaction rate may be significantly higher in the B group.
+
+In that sense, another indicator of pulp healing might prove the effectiveness of the type B solution (or type A).
