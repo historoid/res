@@ -4,4 +4,4 @@ This repository is used for my research.
 
 ## Statistics
 
-methods: [参考サイト](https://www.statweb.jp/method/sentaku-houhou)
+[検定の種類と選択方法][https://www.statweb.jp/method/sentaku-houhou]
