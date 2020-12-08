@@ -32,6 +32,12 @@ The specimens were fixed only at 14 days after replantation.
 
 The cure rate in the B group was significantly greater than the cure rate in the control group. Therefore, in subsequent experiments we began to use type B.
 
+However, this result should be noted. Two control groups were prepared for this experiment. There were two control groups in this experiment: a control group for type A and a control group for type B. There was a significant difference for type B compared to the control group in each group. However, when the two control groups were combined into one group and compared with type B, there was no significant difference.
+
+There was also a significant difference between the two control groups. In other words, the positive rate of the control group was smaller than that of the B-type, which does not mean that the B-type solution has a healing effect on the pulp.
+
+Of course, I informed the professor of this fact. But the professor said, "It's not right to lump the control group together. We should compare each control group," he said, and he only remembered that there was a significant difference between the B-type solution and the control group.
+
 ## Experiment 2: Intentional Delayed Replantation
 
 To replicate clinical conditions, the teeth were immersed in CpG solution for 30 minutes. We call this an intentional delayed replantion.
@@ -105,11 +111,7 @@ I repeatedly explained to the professor and he said, "You are not trying hard en
 
 That's right, if you repeat the experiment 10 times, the probability of finding a significant difference is 40%. If the results coincide with his opinion, the experiment is considered to be successful.
 
-I reanalyzed all of the experiments so far.
-
-I performed a multivariate analysis with variables such as age of the mice, delay time, and presence or absence of congruent teeth. The professor thought that only experiments with identical conditions should be compared and did not even check my analysis. However, my analysis shows that the cure rate of the B-type solution in Experiment 1 is too high.
-
-We have too much faith in the results of Experiment 1.
+I reanalyzed all of the experiments so far. I performed a multivariate analysis with variables such as age of the mice, delay time, and presence or absence of congruent teeth. The professor thought that only experiments with identical conditions should be compared and did not even check my analysis. I think the results of Experiment 1 (B-type solution has a curative effect) are wrong to begin with; it's not that B-type has a curative effect, it's just that the control group did not heal well.
 
 ### Notes on the Experiment
 
